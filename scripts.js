@@ -37,7 +37,7 @@ async function refreshContactList() {
     }
 
     return true;
-}
+};
 
 async function submitAddForm() {
 
@@ -76,7 +76,9 @@ function search() {
             }
         });
     }
-}
+    
+    return true;
+};
 
 $(document).ready(() => { 
     refreshContactList();    
