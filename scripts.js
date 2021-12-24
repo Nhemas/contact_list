@@ -28,7 +28,7 @@ async function refreshContactList() {
         contact_list.output.forEach(contact => {
             let line = '<div class="list__contact" data-search_tags="' + contact.name + contact.phone.replace(/[^+0-9]/g, '') + '" data-contact_id=' + contact.id + '>\
                     <div class="list__contact_field">' + contact.name + '</div>\
-                    <div class="list__contact_field">' + contact.phone + '</div>\
+                    <a class="list__contact_field" href="tel:' + contact.phone.replace(/[^+0-9]/g, '') + '">' + contact.phone + '</a>\
                     <div class="list__contact_field">' + contact.timestamp + '</div>\
                     <div class="list__contact_field remove">x</div>\
                 </div>';
