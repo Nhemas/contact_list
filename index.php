@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="search">
-        <input name="search" placeholder="Поиск">
+        <input name="search" placeholder="Поиск" onkeyup="search();">
     </div>
     <div class="add">
         <input name="name" placeholder="Имя">
