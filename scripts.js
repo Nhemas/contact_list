@@ -79,8 +79,7 @@ function search() {
 }
 
 $(document).ready(() => { 
-    refreshContactList();
-    
+    refreshContactList();    
     $('.list').on('click', '.remove', (e) => {
         let contact_id = $(e.currentTarget).closest('.list__contact').attr('data-contact_id');
         request('api/removeContact.php', {contact_id: contact_id}, 'POST', res => {
