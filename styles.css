@@ -1,0 +1,9 @@
+.add {margin: 10px 0 20px;}
+.list__contact, .list__contact_header {display: grid; grid-template-columns: 300px 180px 150px 115px;}
+.list__contact:nth-child(2n) {background: #0001;}
+.list__contact_header {font-weight: 700;}
+.list__contact_field {padding: 3px 10px; border-right: 1px solid #0003; text-align: center;}
+.list__contact_field:last-child {border-right: none;}
+.list__contact_field:first-child {text-align: left;}
+.list__contact_field.remove {cursor: pointer;}
+.list__contact_field.remove:hover {color: red;}
